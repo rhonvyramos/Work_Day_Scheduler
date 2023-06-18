@@ -22,11 +22,11 @@ $(function () {
   // TODO: Add code to display the current date in the header of the page.
 
   // save button
-  let buttonSave = document.getElementsByClassName("fas fa-save");
+  let buttonSave = document.getElementsByClassName("btn saveBtn");
 
   // event listener to save user input into local storage
-  buttonSave.addEventListener(function() {
-    
+  buttonSave[0].addEventListener("click", function() {
+    let saveInput = this.parentElement.getElementsByClassName("description")[0].value;
+    console.log(saveInput);
   });
-
 });
